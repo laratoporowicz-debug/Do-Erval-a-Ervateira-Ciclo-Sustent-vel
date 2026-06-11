@@ -1,0 +1,132 @@
+:root {
+    --verde-mate: #1b5e20;
+    --verde-folha: #43a047;
+    --marron-galho: #6d4c41;
+    --cinza-claro: #f9f9f9;
+    --texto-escuro: #212121;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--cinza-claro);
+    color: var(--texto-escuro);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--verde-mate);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 4px solid var(--verde-folha);
+}
+
+header h1 { margin: 0; font-size: 2rem; }
+header p { margin: 0.5rem 0 0 0; font-weight: 300; }
+
+main {
+    max-width: 850px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Painel de Status */
+.painel-status {
+    background: #f1f8e9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #dcedc8;
+}
+
+.status-item {
+    margin-bottom: 1rem;
+}
+
+.status-item:last-child { margin-bottom: 0; }
+
+.label-status {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.barra-fundo {
+    background: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barra-preenchimento {
+    height: 100%;
+    width: 50%;
+    transition: width 0.5s ease-in-out;
+}
+
+#barra-prod { background-color: var(--marron-galho); }
+#barra-sust { background-color: var(--verde-folha); }
+
+/* Etapas do Jogo */
+.etapa-container {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.etapa-titulo {
+    color: var(--verde-mate);
+    margin-top: 0;
+    font-size: 1.2rem;
+    border-left: 4px solid var(--verde-folha);
+    padding-left: 0.5rem;
+}
+
+.botoes-flex {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-opcao {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    border: 2px solid var(--verde-folha);
+    color: var(--verde-mate);
+    padding: 0.8rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-opcao:hover {
+    background: var(--verde-folha);
+    color: white;
+}
+
+/* Relatórios */
+.relatorio-box {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #fafafa;
+    border-left: 4px solid var(--verde-mate);
+    border-radius: 4px;
+    min-height: 60px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-size: 0.85rem;
+}
