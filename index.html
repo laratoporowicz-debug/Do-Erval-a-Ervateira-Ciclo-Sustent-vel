@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Ciclo da Erva-Mate Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Do Erval à Ervateira: Ciclo Sustentável</h1>
+        <p>Maneje a produção de Erva-Mate equilibrando lucro econômico e preservação ambiental</p>
+    </header>
+
+    <main>
+        <section class="painel-status">
+            <div class="status-item">
+                <div class="label-status">
+                    <span>Produtividade / Rendimento Comercial</span>
+                    <span id="txt-prod">50%</span>
+                </div>
+                <div class="barra-fundo">
+                    <div id="barra-prod" class="barra-preenchimento"></div>
+                </div>
+            </div>
+
+            <div class="status-item">
+                <div class="label-status">
+                    <span>Sustentabilidade (Solo e Biodiversidade)</span>
+                    <span id="txt-sust">50%</span>
+                </div>
+                <div class="barra-fundo">
+                    <div id="barra-sust" class="barra-preenchimento"></div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="etapa-container">
+                <h3 class="etapa-titulo">Etapa 1: Cultivo no Erval</h3>
+                <div class="botoes-flex">
+                    <button class="btn-opcao" onclick="processarCiclo('sombreado')">Cultivar Erva Nativa Sombreada (Na Mata)</button>
+                    <button class="btn-opcao" onclick="processarCiclo('plenosol')">Cultivar em Monocultura a Pleno Sol</button>
+                </div>
+            </div>
+
+            <div class="etapa-container">
+                <h3 class="etapa-titulo">Etapa 2: Processamento Inicial (Sapeco e Secagem)</h3>
+                <div class="botoes-flex">
+                    <button class="btn-opcao" onclick="processarCiclo('biomassa')">Secador com Trocador de Calor (Biomassa Limpa)</button>
+                    <button class="btn-opcao" onclick="processarCiclo('fumaça')">Sapeco Tradicional com Queima Direta de Lenha</button>
+                </div>
+            </div>
+
+            <div class="etapa-container">
+                <h3 class="etapa-titulo">Etapa 3: Beneficiamento na Ervateira</h3>
+                <div class="botoes-flex">
+                    <button class="btn-opcao" onclick="processarCiclo('vacuo')">Empacotamento a Vácuo (Maior durabilidade)</button>
+                    <button class="btn-opcao" onclick="processarCiclo('comum')">Empacotamento em Papel Simples</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="relatorio-box">
+            <strong>Monitor do Erval:</strong>
+            <p id="log-mensagem">Escolha uma alternativa em cada etapa para gerenciar sua cadeia produtiva.</p>
+        </section>
+    </main>
+
+    <footer>
+        Projeto Pedagógico para o Agrinho 2026 • Foco em Sustentabilidade Regional
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
